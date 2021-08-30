@@ -22,25 +22,25 @@
     android:orientation="vertical"
     tools:context="com.example.miwok.MainActivity">
 
-    <TextView
+    <Button
         android:id="@+id/numbers"
         style="@style/CategoryStyle"
         android:background="@color/category_numbers"
         android:text="@string/category_numbers" />
 
-    <TextView
+    <Button
         android:id="@+id/family"
         style="@style/CategoryStyle"
         android:background="@color/category_family"
         android:text="@string/category_family" />
 
-    <TextView
+    <Button
         android:id="@+id/colors"
         style="@style/CategoryStyle"
         android:background="@color/category_colors"
         android:text="@string/category_colors" />
 
-    <TextView
+    <Button
         android:id="@+id/phrases"
         style="@style/CategoryStyle"
         android:background="@color/category_phrases"

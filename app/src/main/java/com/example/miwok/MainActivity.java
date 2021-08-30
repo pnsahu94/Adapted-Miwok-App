@@ -14,7 +14,12 @@
  * limitations under the License.
  */
 package com.example.miwok;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,5 +30,48 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
+
+
+        // Adding on Click Listener to numbers button
+        Button numbers = (Button) findViewById(R.id.numbers);
+        numbers.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
+                startActivity(numbersIntent);
+            }
+        });
+
+        // Adding on Click Listener to family button
+        Button family = (Button) findViewById(R.id.family);
+        family.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent numbersIntent = new Intent(MainActivity.this, FamilyMembersActivity.class);
+                startActivity(numbersIntent);
+            }
+        });
+
+        // Adding on Click Listener to phrases button
+        Button phrases = (Button) findViewById(R.id.phrases);
+        phrases.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent numbersIntent = new Intent(MainActivity.this, PhrasesActivity.class);
+                startActivity(numbersIntent);
+            }
+        });
+
+        // Adding on Click Listener to colors button
+        Button colors = (Button) findViewById(R.id.colors);
+        colors.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Intent numbersIntent = new Intent(MainActivity.this, ColorsActivity.class);
+                startActivity(numbersIntent);
+            }
+        });
     }
+
+
 }
